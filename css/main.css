@@ -66,4 +66,13 @@ table {
   font-weight: bold;
   font-style: normal;
   font-display: swap;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  height: 100svh;
+  font-family: "Open Sans", sans-serif;
+  background-color: #909ff4;
 }/*# sourceMappingURL=main.css.map */

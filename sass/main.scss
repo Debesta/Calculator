@@ -1,3 +1,13 @@
 @use 'reset' as *;
 @use 'fonts' as *;
 @use 'colors' as *;
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    height: 100svh;
+    font-family: 'Open Sans', sans-serif;
+    background-color: $first;
+}
