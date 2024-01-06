@@ -18,16 +18,43 @@ body{
     gap: 1em;
     width: 100%;
     height: 600px;
-    padding: 1em;
+    padding: 3em 1em 1em;
+    border: 3px solid $second-darker;
+    border-radius: 25px;
+    box-shadow: -3px 3px 0 $second-darker;
+    background-color: $second;
 
     &__btn{
+        border: 3px solid $third-darker;
+        border-radius: 15px;
+        box-shadow: -3px 3px 0 $third-darker;
         font-family: 'Open Sans', sans-serif;
+        font-size: 1.6rem;
+        background-color: $third;
+        transition: box-shadow .1s, transform .1s;
+
+        &:hover{
+            box-shadow: none;
+            transform: translate(-3px, 3px)
+        }
     }
 
     &__screen{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        border: 3px solid $fourth-darker;
+        border-radius: 15px;
+        box-shadow: inset -3px 3px 0 $fourth-darker;
         font-family: 'Digital-7', monospace;
+        background-color: $fourth;
     }
 
+    &__screen-text{
+        padding: 0 .2em;
+        font-size: 4.5rem;
+    }
+    
     &__column-1{
         grid-column: 1/2;
     }
