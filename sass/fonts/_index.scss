@@ -1,8 +1,8 @@
 @font-face {
 	font-family: 'Digital-7';
-	src: url('Digital-7.eot');
-	src: url('Digital-7.eot?#iefix') format('embedded-opentype'), url('Digital-7.woff2') format('woff2'),
-		url('Digital-7.woff') format('woff'), url('Digital-7.ttf') format('truetype');
+	src: url('../sass/fonts/Digital-7.eot');
+	src: url('../sass/fonts/Digital-7.eot?#iefix') format('embedded-opentype'), url('../sass/fonts/Digital-7.woff2') format('woff2'),
+		url('../sass/fonts/Digital-7.woff') format('woff'), url('../sass/fonts/Digital-7.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
@@ -10,9 +10,9 @@
 
 @font-face {
 	font-family: 'Open Sans';
-	src: url('OpenSans-Bold.eot');
-	src: url('OpenSans-Bold.eot?#iefix') format('embedded-opentype'), url('OpenSans-Bold.woff2') format('woff2'),
-		url('OpenSans-Bold.woff') format('woff'), url('OpenSans-Bold.ttf') format('truetype');
+	src: url('../sass/fonts/OpenSans-Bold.eot');
+	src: url('../sass/fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'), url('../sass/fonts/OpenSans-Bold.woff2') format('woff2'),
+		url('../sass/fonts/OpenSans-Bold.woff') format('woff'), url('../sass/fonts/OpenSans-Bold.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
 	font-display: swap;
