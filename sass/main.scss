@@ -8,6 +8,68 @@ body{
     align-items: center;
     height: 100vh;
     height: 100svh;
-    font-family: 'Open Sans', sans-serif;
     background-color: $first;
+}
+
+.calculator{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 1em;
+    width: 400px;
+    height: 600px;
+    padding: 1em;
+
+    &__btn{
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    &__screen{
+        font-family: 'Digital-7', monospace;
+    }
+
+    &__column-1{
+        grid-column: 1/2;
+    }
+
+    &__column-2{
+        grid-column: 2/3;
+    }
+
+    &__column-3{
+        grid-column: 3/4;
+    }
+
+    &__column-4{
+        grid-column: 4/5;
+    }
+
+    &__column-1-4{
+        grid-column: 1/-1;
+    }
+
+    &__row-1{
+        grid-row: 1/2;
+    }
+    
+    &__row-2{
+        grid-row: 2/3;
+    }
+    &__row-3{
+        grid-row: 3/4;
+    }
+    &__row-4{
+        grid-row: 4/5;
+    }
+    &__row-5{
+        grid-row: 5/6;
+    }
+    &__row-6{
+        grid-row: 6/7;
+    }
+
+    &__row-5-6{
+        grid-row: 5/7;
+    }
+
 }
