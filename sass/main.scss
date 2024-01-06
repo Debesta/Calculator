@@ -21,13 +21,13 @@ body{
     padding: 3em 1em 1em;
     border: 3px solid $second-darker;
     border-radius: 25px;
-    box-shadow: -3px 3px 0 $second-darker;
+    box-shadow: -5px 5px 0 4px $second-darker;
     background-color: $second;
 
     &__btn{
         border: 3px solid $third-darker;
         border-radius: 15px;
-        box-shadow: -3px 3px 0 $third-darker;
+        box-shadow: -3px 3px 0 2px $third-darker;
         font-family: 'Open Sans', sans-serif;
         font-size: 1.6rem;
         background-color: $third;
@@ -35,7 +35,7 @@ body{
 
         &:hover{
             box-shadow: none;
-            transform: translate(-3px, 3px)
+            transform: translate(-5px, 5px)
         }
     }
 

@@ -86,13 +86,13 @@ body {
   padding: 3em 1em 1em;
   border: 3px solid #2e3537;
   border-radius: 25px;
-  box-shadow: -3px 3px 0 #2e3537;
+  box-shadow: -5px 5px 0 4px #2e3537;
   background-color: #3b4447;
 }
 .calculator__btn {
   border: 3px solid #db4e3c;
   border-radius: 15px;
-  box-shadow: -3px 3px 0 #db4e3c;
+  box-shadow: -3px 3px 0 2px #db4e3c;
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
   background-color: #fa5943;
@@ -100,7 +100,7 @@ body {
 }
 .calculator__btn:hover {
   box-shadow: none;
-  transform: translate(-3px, 3px);
+  transform: translate(-5px, 5px);
 }
 .calculator__screen {
   display: flex;
