@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,31 +8,35 @@
     <script src="https://kit.fontawesome.com/f4889bb386.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <div class="calculator">
         <div class="calculator__screen calculator__row-1 calculator__column-1-4">
-            <p class="calculator__screen-text">00000000000</p>
+            <p id='text' class="calculator__screen-text">00000000000</p>
         </div>
-        <button class="calculator__btn calculator__row-2 calculator__column-1">AC</button>
-        <button class="calculator__btn calculator__row-2 calculator__column-2"><i class="fa-solid fa-delete-left"></i></button>
-        <button class="calculator__btn calculator__row-2 calculator__column-3">%</button>
-        <button class="calculator__btn calculator__row-2 calculator__column-4">:</button>
-        <button class="calculator__btn calculator__row-3 calculator__column-1">7</button>
-        <button class="calculator__btn calculator__row-3 calculator__column-2">8</button>
-        <button class="calculator__btn calculator__row-3 calculator__column-3">9</button>
-        <button class="calculator__btn calculator__row-3 calculator__column-4">x</button>
-        <button class="calculator__btn calculator__row-4 calculator__column-1">4</button>
-        <button class="calculator__btn calculator__row-4 calculator__column-2">5</button>
-        <button class="calculator__btn calculator__row-4 calculator__column-3">6</button>
-        <button class="calculator__btn calculator__row-4 calculator__column-4">-</button>
-        <button class="calculator__btn calculator__row-5 calculator__column-1">1</button>
-        <button class="calculator__btn calculator__row-5 calculator__column-2">2</button>
-        <button class="calculator__btn calculator__row-5 calculator__column-3">3</button>
-        <button class="calculator__btn calculator__row-5-6 calculator__column-4">+</button>
-        <button class="calculator__btn calculator__row-6 calculator__column-1">0</button>
-        <button class="calculator__btn calculator__row-6 calculator__column-2">.</button>
-        <button class="calculator__btn calculator__row-6 calculator__column-3">=</button>
+        <button id='delete-AC' class="calculator__btn calculator__row-2 calculator__column-1">AC</button>
+        <button id='delete' class="calculator__btn calculator__row-2 calculator__column-2">
+            <i class="fa-solid fa-delete-left"></i>
+        </button>
+        <button id='percent' class="calculator__btn calculator__row-2 calculator__column-3">%</button>
+        <button id='dividing' class="calculator__btn calculator__row-2 calculator__column-4">:</button>
+        <button id='seven' class="calculator__btn calculator__row-3 calculator__column-1">7</button>
+        <button id='eight' class="calculator__btn calculator__row-3 calculator__column-2">8</button>
+        <button id='nine' class="calculator__btn calculator__row-3 calculator__column-3">9</button>
+        <button id='multiplying' class="calculator__btn calculator__row-3 calculator__column-4">x</button>
+        <button id='four' class="calculator__btn calculator__row-4 calculator__column-1">4</button>
+        <button id='five' class="calculator__btn calculator__row-4 calculator__column-2">5</button>
+        <button id='six' class="calculator__btn calculator__row-4 calculator__column-3">6</button>
+        <button id='minus' class="calculator__btn calculator__row-4 calculator__column-4">-</button>
+        <button id='one' class="calculator__btn calculator__row-5 calculator__column-1">1</button>
+        <button id='two' class="calculator__btn calculator__row-5 calculator__column-2">2</button>
+        <button id='three' class="calculator__btn calculator__row-5 calculator__column-3">3</button>
+        <button id='plus' class="calculator__btn calculator__row-5-6 calculator__column-4">+</button>
+        <button id='zero' class="calculator__btn calculator__row-6 calculator__column-1">0</button>
+        <button id='dot' class="calculator__btn calculator__row-6 calculator__column-2">.</button>
+        <button id='equals' class="calculator__btn calculator__row-6 calculator__column-3">=</button>
     </div>
     <script src="js/main.js"></script>
 </body>
+
 </html>
