@@ -11,32 +11,49 @@
 
 <body>
     <div class="calculator">
-        <div class="calculator__screen calculator__row-1 calculator__column-1-4">
-            <p id='text' class="calculator__screen-text">00000000000</p>
-        </div>
-        <button id='delete-AC' class="calculator__btn calculator__row-2 calculator__column-1">AC</button>
-        <button id='delete' class="calculator__btn calculator__row-2 calculator__column-2">
+        <input id="text" class="calculator__screen calculator__screen-text calculator__row-1 calculator__column-1-4">
+
+        <button id='delete-AC' class="calculator__btn calculator__row-2 calculator__column-1"
+            onclick="clearDisplay()">AC</button>
+        <button id='delete' class="calculator__btn calculator__row-2 calculator__column-2" onclick="clearDisplay()">
             <i class="fa-solid fa-delete-left"></i>
         </button>
-        <button id='percent' class="calculator__btn calculator__row-2 calculator__column-3">%</button>
-        <button id='dividing' class="calculator__btn calculator__row-2 calculator__column-4">:</button>
-        <button id='seven' class="calculator__btn calculator__row-3 calculator__column-1">7</button>
-        <button id='eight' class="calculator__btn calculator__row-3 calculator__column-2">8</button>
-        <button id='nine' class="calculator__btn calculator__row-3 calculator__column-3">9</button>
-        <button id='multiplying' class="calculator__btn calculator__row-3 calculator__column-4">x</button>
-        <button id='four' class="calculator__btn calculator__row-4 calculator__column-1">4</button>
-        <button id='five' class="calculator__btn calculator__row-4 calculator__column-2">5</button>
-        <button id='six' class="calculator__btn calculator__row-4 calculator__column-3">6</button>
-        <button id='minus' class="calculator__btn calculator__row-4 calculator__column-4">-</button>
-        <button id='one' class="calculator__btn calculator__row-5 calculator__column-1">1</button>
-        <button id='two' class="calculator__btn calculator__row-5 calculator__column-2">2</button>
-        <button id='three' class="calculator__btn calculator__row-5 calculator__column-3">3</button>
-        <button id='plus' class="calculator__btn calculator__row-5-6 calculator__column-4">+</button>
-        <button id='zero' class="calculator__btn calculator__row-6 calculator__column-1">0</button>
-        <button id='dot' class="calculator__btn calculator__row-6 calculator__column-2">.</button>
-        <button id='equals' class="calculator__btn calculator__row-6 calculator__column-3">=</button>
-    </div>
-    <script src="js/main.js"></script>
+        <button id='percent' class="calculator__btn calculator__row-2 calculator__column-3"
+            onclick="appendToDisplay('*0.01')">%</button>
+        <button id='dividing' class="calculator__btn calculator__row-2 calculator__column-4"
+            onclick="appendToDisplay('/')">:</button>
+        <button id='seven' class="seven calculator__btn calculator__row-3 calculator__column-1"
+            onclick="appendToDisplay('7')">7</button>
+        <button id='eight' class="calculator__btn calculator__row-3 calculator__column-2"
+            onclick="appendToDisplay('8')">8</button>
+        <button id='nine' class="calculator__btn calculator__row-3 calculator__column-3"
+            onclick="appendToDisplay('9')">9</button>
+        <button id='multiplying' class="calculator__btn calculator__row-3 calculator__column-4"
+            onclick="appendToDisplay('*')">x</button>
+        <button id='four' class="calculator__btn calculator__row-4 calculator__column-1"
+            onclick="appendToDisplay('4')">4</button>
+        <button id='five' class="calculator__btn calculator__row-4 calculator__column-2"
+            onclick="appendToDisplay('5')">5</button>
+        <button id='six' class="calculator__btn calculator__row-4 calculator__column-3"
+            onclick="appendToDisplay('6')">6</button>
+        <button id='minus' class="calculator__btn calculator__row-4 calculator__column-4"
+            onclick="appendToDisplay('-')">-</button>
+        <button id='one' class="calculator__btn calculator__row-5 calculator__column-1"
+            onclick="appendToDisplay('1')">1</button>
+        <button id='two' class="calculator__btn calculator__row-5 calculator__column-2"
+            onclick="appendToDisplay('2')">2</button>
+        <button id='three' class="calculator__btn calculator__row-5 calculator__column-3"
+            onclick="appendToDisplay('3')">3</button>
+        <button id='plus' class="calculator__btn calculator__row-5-6 calculator__column-4"
+            onclick="appendToDisplay('+')">+</button>
+        <button id='zero' class="calculator__btn calculator__row-6 calculator__column-1"
+            onclick="appendToDisplay('0')">0</button>
+        <button id='dot' class="calculator__btn calculator__row-6 calculator__column-2"
+            onclick="appendToDisplay('.')">.</button>
+        <button id='equals' class="calculator__btn calculator__row-6 calculator__column-3"
+            onclick="calculate()">=</button>
+        </>
+        <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,20 +1,13 @@
-const text = document.getElementById('text')
-const delAC = document.getElementById('delete-AC')
-const del = document.getElementById('delete')
-const percent = document.getElementById('percent')
-const dividing = document.getElementById('dividing')
-const seven = document.getElementById('seven')
-const eight = document.getElementById('eight')
-const nine = document.getElementById('nine')
-const multiplying = document.getElementById('multiplying')
-const four = document.getElementById('four')
-const five = document.getElementById('five')
-const six = document.getElementById('six')
-const minus = document.getElementById('minus')
-const one = document.getElementById('one')
-const two = document.getElementById('two')
-const three = document.getElementById('three')
-const plus = document.getElementById('plus')
-const zero = document.getElementById('zero')
-const dot = document.getElementById('dot')
-const equals = document.getElementById('equals')
+function appendToDisplay(value) {
+    document.getElementById('text').value += value;
+  }
+  
+  function clearDisplay() {
+    document.getElementById('text').value = '';
+  }
+  
+  function calculate() {
+    const display = document.getElementById('text').value;
+    const result = eval(display);
+    document.getElementById('text').value = result;
+  }
